@@ -11,16 +11,10 @@ public class MainCafeteira {
         obj1.ligar();
         obj1.exibe();
 
-        obj1.prepararCafe();
-
-        obj1.adicionarAgua(2500);
-
-        obj1.adicionarCafe(120);
-
         obj1.adicionarAgua(2000);
         obj1.adicionarCafe(100);
         obj1.prepararCafe();
-
-        obj1.desligar();
+        obj1.exibe();
+        obj1.quantosCafesPossiveis();
     }
 }
