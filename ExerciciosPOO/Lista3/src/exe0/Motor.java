@@ -28,6 +28,12 @@ public class Motor {
         this.ligado = ligado;
     }
 
+    public void ligar(){
+        this.ligado = true;
+    }
+    public void desligar(){
+        this.ligado = false;
+    }
     @Override
     public String toString() {
         return "Motor{" +

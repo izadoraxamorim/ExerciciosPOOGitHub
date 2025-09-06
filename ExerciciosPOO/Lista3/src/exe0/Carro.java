@@ -9,7 +9,7 @@ public class Carro {
 
     public Carro(String modelo, int potencia, boolean ligado) {
         this.modelo = modelo;
-        this.motor = new Motor(potencia, ligado); // criado aqui dento, mostra uma dependência
+        this.motor = new Motor(potencia, ligado); // criado aqui dento pois são dependentes
     }
 
     public String getModelo() {
@@ -24,10 +24,16 @@ public class Carro {
         return motor;
     }
 
-    public void setMotor(Motor motor) {
-        this.motor = motor;
+    public void setMotor(int potencia, boolean ligado) {
+        this.motor = new Motor(potencia, ligado);
     }
 
+    public void ligar(){
+        this.motor.ligar();
+    }
+    public void desligar(){
+        this.motor.desligar();
+    }
     @Override
     public String toString() {
         return "Carro{" +
