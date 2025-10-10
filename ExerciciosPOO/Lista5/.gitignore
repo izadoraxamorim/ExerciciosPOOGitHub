@@ -1,0 +1,31 @@
+### IntelliJ IDEA ###
+# Ignora arquivos e pastas de build
+/out/
+.idea/
+*.iml
+
+# Mantém apenas código-fonte
+!src/
+
+### Eclipse (caso alguém abra o projeto lá) ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Sistema ###
+.DS_Store
